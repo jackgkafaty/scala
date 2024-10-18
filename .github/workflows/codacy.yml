@@ -28,7 +28,7 @@ jobs:
           format: sarif
           gh-code-scanning-compat: true
           max-allowed-issues: 2147483647  # Force 0 exit code to allow SARIF file generation
-          #run-docker-tools: "false"
+          run-docker-tools: "false"
 
       # Step to upload the SARIF file generated in the previous step
       - name: Upload SARIF results file
