@@ -33,7 +33,7 @@ jobs:
         run: sbt publishLocal
       # now run SpotBugs and upload the results to Code Scanning
       - name: Run SpotBugs with FindSecBugs
-        uses: advanced-security/spotbugs-findsecbugs-action@vmain
+        uses: advanced-security/spotbugs-findsecbugs-action@main
         with:
           # set these appropriately for your project - the defaults are shown here for context
           spotbugs_target: "target/scala-2.13" # cannot have globs
